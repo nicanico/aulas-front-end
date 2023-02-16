@@ -7,7 +7,7 @@
     min-height: 50vh; 
     /* o minimo de height deve ser 50 e o máximo 
     fica a criterio do que for preciso*/
-    background-color: whitesmoke;
+    background-color: wheat;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
