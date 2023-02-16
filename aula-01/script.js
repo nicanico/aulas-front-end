@@ -32,9 +32,6 @@ function media() {
             formulario.classList.remove('sombra-amarela')
             formulario.classList.remove('sombra-vermelha')
 
-
-
-
         }
     }
 }
