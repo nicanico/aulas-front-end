@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+header{
+    display: grid;
+    place-content: center;
+    height: 150px;
+    box-shadow: 4px 0 8px #0006;
+    font-size: 2rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 16px;
+    cursor: pointer;
+    
+}
+.card:hover{
+    box-shadow: 0px 0 8px #0006;
+}
+.card-image{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.card-title{
+    font-size: 1.5rem;
+}
+.card-description{
+    font-size: 1rem;
+}
+.card-price{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 900;
+}
+.footer-text{
+    align-items: center;
+    place-content: center;
+}
