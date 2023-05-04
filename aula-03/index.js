@@ -3,7 +3,6 @@
 import { produtos } from "./produtos.js"
 import './card-produto.js'
 
-
 const criarCard = ( produto ) =>{ 
 
     const card = document.createElement('card-product')
