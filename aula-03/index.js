@@ -3,6 +3,7 @@
 import { produtos } from "./produtos.js"
 import './card-produto.js'
 
+
 const criarCard = ( produto ) =>{ 
 
     const card = document.createElement('card-product')
@@ -12,6 +13,8 @@ const criarCard = ( produto ) =>{
     card.descricao = produto.description
     card.preco = produto.price
     card.foto = produto.image
+    
+
 
     return card
 }
