@@ -1,28 +1,18 @@
 'use strict'
 
 import { produtos } from "./produtos.js"
+import './card-produto.js'
+
 
 const criarCard = ( produto ) =>{ 
-    const card = document.createElement('div')
+
+    const card = document.createElement('card-product')
     card.classList.add('card')
-    
-    const foto = document.createElement('img')
-    foto.classList.add('card-image')
-    foto.src = `./img/${produto.image}`
 
-    const titulo = document.createElement('h5')
-    titulo.classList.add('card-title')
-    titulo.textContent = produto.name
-
-    const descricao = document.createElement('p')
-    descricao.classList.add('card-description')
-    descricao.textContent = produto.description
-
-    const preco = document.createElement('span')
-    preco.classList.add('card-price')
-    preco.textContent = produto.price
-
-    card.append(foto, titulo, descricao, preco)
+    card.titulo = produto.name
+    card.descricao = produto.description
+    card.preco = produto.price
+    card.foto = produto.image
 
     return card
 }
@@ -33,7 +23,6 @@ const carregarProdutos = () =>{
 
     container.replaceChildren(...cards)
 
-    // console.log(cards)
 }
 
 carregarProdutos()
